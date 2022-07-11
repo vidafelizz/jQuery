@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>thumbnail-listview</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+ <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>머리말 영역(header)</h1>
+  </div>
+  <div data-role="content">
+   <p>본문영역(content)</p>
+      <ul data-role="listview" data-inset="true">
+      <!-- 썸네일 이미지를 리스트뷰에 적용할 수 있으며 항목 왼쪽에 추가됨
+      		class="ui-li-icon" : 아이콘 크기 작게 -->
+    <li data-role="listdivider"> 박물관 종류 </li>
+    <li><a href="#"><img src="../images/listimg.png" class="ui-li-icon">리스트1
+    <span class="ui-li-count">new</span></a></li>
+    <li><a href="#"><img src="../images/listimg.png" class="ui-li-icon">등대 박물관</a></li>
+    <li><a href="#"><img src="../images/listimg.png" class="ui-li-icon">공룡 박물관</a></li>
+    <li><a href="#"><img src="../images/listimg.png" class="ui-li-icon">하늘 박물관</a></li>
+   </ul>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>꼬리말영역(footer)</h4>
+  </div>
+ </div>
+
+</body>
+</html>

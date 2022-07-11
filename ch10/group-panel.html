@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>group-panel</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+ <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>머리말 영역(header)</h1>
+  </div>
+  <div data-role="content">
+   <div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+    <div data-role="collapsible">
+     <h3>접이식 패널1</h3>
+     <p>패널 내용1</p>
+    </div>
+    <!-- data-collapsed="false" : 로딩시 내용영역이 펼쳐진 상태 -->
+    <div data-role="collapsible" data-collapsed="false">
+     <h3>접이식 패널2</h3>
+     <p>패널 내용2</p>
+    </div>
+    <div data-role="collapsible">
+     <h3>접이식 패널3</h3>
+     <p>패널 내용3</p>
+    </div>
+   </div>
+   <p>본문영역(content)</p>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>꼬리말영역(footer)</h4>
+  </div>
+ </div>
+
+</body>
+</html>

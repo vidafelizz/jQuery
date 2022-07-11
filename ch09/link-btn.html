@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>link-btn</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+ <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>머리말 영역(header)</h1>
+   <a href="#">a태그 버튼1</a>
+   <a href="#">a태그 버튼2</a>
+  </div>
+  <div data-role="content">
+   <p>본문영역(content)</p>
+   <a href="#">a태그 버튼3</a>
+   <a href="#" data-role="button">a태그 버튼4</a>
+   <!-- data-inline="true": 글자의 여백을 제거시켜 작은 버튼을 만듦 -->
+   <a href="#" data-role="button" data-inline="true">a태그 버튼5</a> 
+   <!-- data-mini="true": 버튼과 글자의 상하여백을 제거 -->  
+   <a href="#" data-role="button" data-mini="true">a태그 버튼6</a>   
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <a href="#">a태그 버튼7</a>
+   <h4>꼬리말영역(footer)</h4>
+   <a href="#">a태그 버튼8</a>
+  </div>
+ </div>
+
+</body>
+</html>

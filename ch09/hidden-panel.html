@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hidden-panel</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+ <div data-role="page" id="page1">
+ <!-- panel: 왼쪽, 오른쪽에서 팝업메뉴처럼 패널화면이 나옴
+ data-display="overlay": 본 페이지 앞으로 패널 표시
+ data-display="reveal" : 본 페이지 밑으로 패널 표시
+ data-display="push"   : 본 페이지 옆에 패널 표시 -->
+  <div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+   <form>
+    <h1>로그인 패널</h1>
+    <label for="name">사용자명 : </label>
+    <!-- data-clear-btn="true": 입력된 텍스트를 지우는 [x]버튼이 생성 -->
+    <input type="text" name="name" id="name" value="" data-mini="true" 
+    data-clear-btn="true">
+    <label for="password">비밀번호 : </label>
+    <input type="password" name="password" id="password" value="" data-mini="true"
+    data-clear-btn="true">
+    <div class="ui-grid-a">
+     <!-- data-rel="close" : 패널을 닫는 기능 -->
+     <div class="ui-block-a"><a href="#" data-role="button" data-rel="close">취소</a></div>
+     <div class="ui-block-b"><a href="#" data-role="button" data-rel="close">저장</a></div>
+    </div>
+   </form>
+  </div>
+  
+  <div data-role="panel" id="panel2" data-display="reveal">
+  <ul data-role="listview">
+	<li data-icon="delete"><a href="#" data-rel="close">메뉴 패널 종류</a></li>
+	<li><a href="#">메뉴1</a></li>  
+	<li><a href="#">메뉴2</a></li>  
+	<li><a href="#">메뉴3</a></li>  
+	<li><a href="#">메뉴4</a></li>  
+  </ul>
+  </div>
+  
+  <div data-role="panel" id="panel3" data-display="push" data-position="right">
+  <h3>패널 메모</h3>
+  <p>오른쪽 메모 패널 영역입니다.</p>
+  <a href="#page1" data-role="button" data-rel="close">패널 종료</a>
+  </div>
+ 
+  <div data-role="header">
+   <h1>머리말 영역(header)</h1>
+  </div>
+  <div data-role="content">
+   <a href="#panel1" data-role="button" data-inline="true">로그인 패널</a>
+   <a href="#panel2" data-role="button" data-inline="true">메뉴 패널</a>
+   <a href="#panel3" data-role="button" data-inline="true">메모 패널</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>꼬리말영역(footer)</h4>
+  </div>
+ </div>
+
+</body>
+</html>

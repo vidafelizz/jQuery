@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>column-toggle-table</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+ <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>머리말 영역(header)</h1>
+  </div>
+  <div data-role="content">
+   <table class="ui-responsive table-stripe" id="my-table1" 
+   data-mode="columntoggle" data-role="table">
+    <thead>
+     <tr>
+      <!-- data-priority=" ": 셀의 우선순위를 정할 수 있는 속성 값(1이 가장 높음~6) 가능 -->
+      <th data-priority="5">학년</th>
+      <th>이름</th>
+      <th data-priority="6">성별</th>
+      <th data-priority="1">성적</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <th>1</th>
+      <th>홍길동</th>
+      <th>남</th>
+      <th>82</th>
+     </tr>
+      <tr>
+      <th>4</th>
+      <th>사임당</th>
+      <th>여</th>
+      <th>96</th>
+     </tr>
+      <tr>
+      <th>3</th>
+      <th>유관순</th>
+      <th>여</th>
+      <th>79</th>
+     </tr>
+    </tbody>
+   
+   </table>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>꼬리말영역(footer)</h4>
+  </div>
+ </div>
+
+</body>
+</html>

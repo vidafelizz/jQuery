@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>count-bubble</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+ <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>머리말 영역(header)</h1>
+  </div>
+  <div data-role="content">
+   <p>본문영역(content)</p>
+   <!-- <span class="ui-li-count"> : 버블효과 -->
+   <ul data-role="listview" data-inset="true" data-count-theme="b">
+    <li><a href="#">리스트1<span class="ui-li-count">5</span></a></li>
+    <li><a href="#">리스트2<span class="ui-li-count">17</span></a></li>
+    <li><a href="#">리스트3<span class="ui-li-count">hot</span></a></li>
+    <li><a href="#">리스트4<span class="ui-li-count">new</span></a></li>
+   </ul>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>꼬리말영역(footer)</h4>
+  </div>
+ </div>
+
+</body>
+</html>

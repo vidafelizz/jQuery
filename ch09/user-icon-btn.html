@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>user-icon-btn</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+.ui-icon-my-icon:after {
+	background-image: url("../images/buttonicon1.png");
+	background-size: 18px 18px;
+}
+
+</style>
+
+</head>
+<body>
+
+ <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>머리말 영역(header)</h1>
+  </div>
+  <div data-role="content">
+   <p>본문영역(content)</p>
+   <button data-icon="my-icon">사용자정의 아이콘1</button>
+   <a href="#" data-role="button" data-icon="my-icon">사용자정의아이콘2</a>
+   <input type="button" value="사용자정의아이콘3" data-icon="my-icon">
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>꼬리말영역(footer)</h4>
+  </div>
+ </div>
+
+</body>
+</html>
